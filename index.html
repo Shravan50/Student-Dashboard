@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Modal for starting screen -->
+    <div class="modal" id="startingscreen">
+        <div class="modal-content">
+            <button class="close-button" id="closeStartScreen" aria-label="Close welcome window">X</button>
+            <h3 class="header">Welcome to the Student Dashboard!!</h3>
+            <p class="header">This is a project I took on to create a good tool for students(like myself) to use.</p>
+            <p class="header">This is a simple dashboard that includes a Pomodoro timer and a to-do list. You can use the buttons there to navigate between the two features.</p>
+            <footer class="header">I hope you enjoy using it! - Shravan</footer>
+        </div>
+    </div>
+    <div id= "startWindow">
+        <div class="header">
+            <h1>Dashboard</h1>
+        </div>
+
+        <div class="buttons">
+            <button class="buttoncontent" id="Timer">Pomodoro Timer</button>
+            <button class="buttoncontent" id="list">To-Do List</button>
+            <button class="buttoncontent" id="calendar">Calendar</button>
+            <button class="buttoncontent" id="about">About</button>
+        </div>
+    </div>
+
+    <div id="timerWindow" style="display:none;">
+        <div style="display:flex; justify-content: space-between;">
+            <h3 class="header" style="cursor:pointer" id="backButton"> Back</h3>
+            <h3 class="header" id="time"></h3>
+        </div>
+        
+        <div class="timer">
+            <div class="timerDisplay" id="timerDisplay">
+                <span id="timerValue">25:00</span>
+                <div class="timerButtons">
+                    <button class="buttoncontent" id="startButton">Start</button>
+                    <button class="buttoncontent" id="pauseButton">Pause</button>
+                    <button class="buttoncontent" id="resetButton">Reset</button>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="taskSection" style="display:flex; justify-content: center; margin-top: 20px; gap: 10px; align-items: center; flex-wrap: wrap;">
+            <label style="color:beige" for="taskInput">Task:</label>
+            <input type="text" id="taskInput" placeholder="Enter your task here">
+            <button class="buttoncontent" id="addTaskButton">Add Task</button>
+        </div>
+        <ul id="taskList" class="taskList"></ul>
+    </div>
+    <div id="todolistWindow" style="display: none;">
+        <div style="display:flex; justify-content: space-between;">
+            <h3 class="header" style="cursor:pointer" id="backButton2"> Back</h3>
+            <h3 class="header" id="time2"></h3>
+        </div>
+        <div class="taskSection" style="display:flex; justify-content: center; margin-top: 20px; gap: 10px; align-items: center; flex-wrap: wrap;">
+            <label style="color:beige" for="taskInput2">Task:</label>
+            <input type="text" id="taskInput2" placeholder="Enter your task here">
+            <button class="buttoncontent" id="addTaskButton2">Add Task</button>
+        </div>
+        <ul id="taskList2" class="taskList"></ul>
+    </div>
+
+    <div id="calendarWindow" style="display: none;">
+        <div style="display:flex; justify-content: space-between;">
+            <h3 class="header" style="cursor:pointer" id="backButton3"> Back</h3>
+            <h3 class="header" id="time3"></h3>
+        </div>
+        <div class="calendar">
+            <iframe style="align-items: center;" src="https://calendar.google.com/calendar/embed?src=your_calendar_id&ctz=your_timezone" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div id="aboutWindow" style="display:none">
+                <div style="display:flex; justify-content: space-between;">
+                    <h3 class="header" style="cursor:pointer" id="backButton4"> Back</h3>
+                    <h3 class="header" id="time4"></h3>
+                </div>
+            <h1 class="header"> About me!!</h1>
+            <p class="header"> My name is Shravan</p>
+            <p class="header"> I am a junior in high school and I have started to do hackatime for some rewards and recognition overall.</p>
+            <p class="header"> This is my 2nd coding project, and I am very proud of it, with it having many things I didn't even know I could do using just HTML, CSS, and JavaScript.</p>
+            <p class="header"> I have previous experience with Python, espeically coding Discord Bots back in the day.</p>
+            <p class="header"> I am also interested in web development and hope to pursue it further in the future.</p>
+            <p class="header"> Stardance has been a great way to stay organized and motivated!</p>
+            <p class="header"> Especially with all the prizes available!</p>
+            <p class="header"> I hope you enjoy using this dashboard as much as I enjoyed making it!</p>
+        </div>
+    </div>
+</body>
+</html>
