@@ -181,3 +181,20 @@ function screenwarning () {
         alert("You have been on the webpage for more than 30 minutes. Please take a break.");
     }
 }
+const notesButton = document.getElementById("Notes");
+const notesWindow = document.getElementById("NotesWindow");
+const notesBackButton = document.getElementById("backButton5");
+
+if (notesButton && notesWindow) {
+    notesButton.addEventListener("click", () => {
+        document.getElementById("startWindow").style.display = "none";
+        notesWindow.style.display = "block";
+    });
+}
+
+if (notesBackButton && notesWindow) {
+    notesBackButton.addEventListener("click", () => {
+        document.getElementById("startWindow").style.display = "block";
+        notesWindow.style.display = "none";
+    });
+}

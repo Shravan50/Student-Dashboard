@@ -27,6 +27,7 @@
             <button class="buttoncontent" id="Timer">Pomodoro Timer</button>
             <button class="buttoncontent" id="list">To-Do List</button>
             <button class="buttoncontent" id="calendar">Calendar</button>
+            <button class="buttoncontent" id="Notes">Notes</button>
             <button class="buttoncontent" id="about">About</button>
         </div>
     </div>
@@ -77,20 +78,32 @@
         <div class="calendar">
             <iframe style="align-items: center;" src="https://calendar.google.com/calendar/embed?src=your_calendar_id&ctz=your_timezone" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
-        <div id="aboutWindow" style="display:none">
-                <div style="display:flex; justify-content: space-between;">
-                    <h3 class="header" style="cursor:pointer" id="backButton4"> Back</h3>
-                    <h3 class="header" id="time4"></h3>
-                </div>
-            <h1 class="header"> About me!!</h1>
-            <p class="header"> My name is Shravan</p>
-            <p class="header"> I am a junior in high school and I have started to do hackatime for some rewards and recognition overall.</p>
-            <p class="header"> This is my 2nd coding project, and I am very proud of it, with it having many things I didn't even know I could do using just HTML, CSS, and JavaScript.</p>
-            <p class="header"> I have previous experience with Python, espeically coding Discord Bots back in the day.</p>
-            <p class="header"> I am also interested in web development and hope to pursue it further in the future.</p>
-            <p class="header"> Stardance has been a great way to stay organized and motivated!</p>
-            <p class="header"> Especially with all the prizes available!</p>
-            <p class="header"> I hope you enjoy using this dashboard as much as I enjoyed making it!</p>
+    </div>
+    <div id="aboutWindow" style="display:none">
+        <div style="display:flex; justify-content: space-between;">
+            <h3 class="header" style="cursor:pointer" id="backButton4"> Back</h3>
+                <h3 class="header" id="time4"></h3>
+        </div>
+        <h1 class="header"> About me!!</h1>
+        <p class="header"> My name is Shravan</p>
+        <p class="header"> I am a junior in high school and I have started to do hackatime for some rewards and recognition overall.</p>
+        <p class="header"> This is my 2nd coding project, and I am very proud of it, with it having many things I didn't even know I could do using just HTML, CSS, and JavaScript.</p>
+        <p class="header"> I have previous experience with Python, espeically coding Discord Bots back in the day.</p>
+        <p class="header"> I am also interested in web development and hope to pursue it further in the future.</p>
+        <p class="header"> Stardance has been a great way to stay organized and motivated!</p>
+        <p class="header"> Especially with all the prizes available!</p>
+        <p class="header"> I hope you enjoy using this dashboard as much as I enjoyed making it!</p>
+        </div>
+    </div>
+    <div id="NotesWindow" style="display:none">
+        <div style="display:flex; justify-content: space-between;">
+            <h3 class="header" style="cursor:pointer" id="backButton5"> Back</h3>
+            <h3 class="header" id="time5"></h3>
+        </div>
+        <div class="notesSection">
+            <label style="color:beige" for="notesInput">Notes:</label>
+            <textarea style="background-color: #333; color: beige;width: 100%; height: 200px;" id="notesInput" placeholder="Enter your notes here"></textarea>
+            <button class="buttoncontent" id="saveNotesButton">Save Notes</button>
         </div>
     </div>
 </body>
